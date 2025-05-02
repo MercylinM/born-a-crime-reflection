@@ -9,6 +9,7 @@ body {
     background-color: #1e1b18;
     color: #f5f5dc;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Sidebar Navigation */
@@ -180,6 +181,12 @@ body {
     margin-bottom: 2rem;
 }
 
+.content-section p:first-child::first-letter{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6b4c3b;
+}
+
 
 .support-img {
     margin-top: 2rem;
@@ -234,16 +241,17 @@ body {
 /* Related Cards */
 .related {
     padding: 4rem 5rem;
-    background-color: #3c3632;
+    background-color: white;
     position: relative;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .related h2{
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+    color: #6b4c3b;
 }
 
 .cards {
@@ -269,7 +277,8 @@ body {
 .card img {
     width: 100%;
     height: 250px;
-    object-fit: cover top;
+    object-fit: cover;
+
 }
 
 .card p, .card h3{
@@ -381,7 +390,13 @@ footer {
         width: 100%;
     }
 
-    .cards{
+    .reimagination{
+        height: auto;
+    }
+}
+
+@media (max-width: 432px) {
+    .related, .cards, .card{
         width: 100%;
     }
 }
