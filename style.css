@@ -262,6 +262,11 @@ body {
     margin: 3% auto;
 }
 
+.card-link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .card {
     background-color: #4a403a;
     border-radius: 8px;
@@ -392,6 +397,10 @@ footer {
 
     .reimagination{
         height: auto;
+    }
+
+    .btn{
+        margin-top: 5rem;
     }
 }
 
